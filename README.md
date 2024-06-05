@@ -1,6 +1,5 @@
-![Descricao da sua imagem](https://raw.githubusercontent.com/andreocunha/upload_files_test/main/exemplo-thumb.png)
 
-![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
+![Flutter: Aplicando TDD](https://github.com/ikyrie/3796-anybank/assets/22684176/a5778bd8-978e-4659-90b8-13c690f18040)
 
 # AnyBank
 
