@@ -1,16 +1,18 @@
-# anybank
+![Descricao da sua imagem](https://raw.githubusercontent.com/andreocunha/upload_files_test/main/exemplo-thumb.png)
 
-A new Flutter project.
+![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
 
-## Getting Started
+# AnyBank
 
-This project is a starting point for a Flutter application.
+Aplicativo de internet banking para o curso de TDD com Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Abrir e rodar o projeto
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Após baixar o projeto, você pode abrir com o Visual Studio Code. Para isso, na tela inicial clique em:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Open Folder** (ou alguma opção similar)
+- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
+- Por fim clique em OK
+
+O Visual Studio Code deve buscar os pacotes necessários para configurar o projeto, aguarde até finalizar. Ao finalizar a busca, você pode executar o App 🏆
+
