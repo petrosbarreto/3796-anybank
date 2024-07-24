@@ -1,17 +1,15 @@
 import 'package:anybank/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
+void main() {
   runApp(const AnyBank());
 }
 
 class AnyBank extends StatelessWidget {
-  const AnyBank({super.key});
+const AnyBank({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return MaterialApp(
       title: "AnyBank",
       theme: ThemeData(
@@ -19,7 +17,7 @@ class AnyBank extends StatelessWidget {
         useMaterial3: true,
         brightness: Brightness.light,
       ),
-      home: const Dashboard(),
+      home: Dashboard(),
     );
   }
 }

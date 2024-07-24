@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:anybank/components/account_actions.dart';
 import 'package:anybank/components/last_transactions.dart';
 import 'package:anybank/components/logo.dart';
@@ -28,7 +30,7 @@ class Dashboard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text(
-                        "Olá, Matheus!",
+                        "Olá, Petros!",
                         style: TextStyle(fontSize: 28),
                       ),
                       Icon(
@@ -61,7 +63,7 @@ class Dashboard extends StatelessWidget {
                     const Padding(
                       padding: EdgeInsets.only(bottom: 32.0),
                       child: Text(
-                        "R\$ 880.67",
+                        "R\$ 980.67",
                         style: TextStyle(fontSize: 24),
                       ),
                     ),
