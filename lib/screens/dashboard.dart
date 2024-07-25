@@ -181,7 +181,7 @@ class Dashboard extends StatelessWidget {
                     ),
                     Column(
                       children: <Widget>[
-                        LastTransactions(icon: Icons.restaurant, transaction: "Compra no iFood", amount: "25.80"),
+                        LastTransactions(icon: Icons.restaurant, transaction: "Comprei no iFood", amount: "25.80"),
                         LastTransactions(icon: Icons.shopping_bag, transaction: "Compra na Leroy Merlin", amount: "45.32"),
                         LastTransactions(icon: Icons.payments, transaction: "Transferência recebida", amount: "80.80"),
                       ],
