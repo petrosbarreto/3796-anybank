@@ -44,6 +44,7 @@ void main() {
       expect(account.balance, 100);
     });
 
+    group('Dashboard Widget Tests', () {
     testWidgets('Testa se o Dashboard é exibido corretamente', (WidgetTester tester) async {
       // Executa o aplicativo
       await tester.pumpWidget(const AnyBank());
@@ -61,6 +62,51 @@ void main() {
       expect(find.text('Transferir'), findsOneWidget);
     });
 
+    testWidgets('Testa a presença dos botões de ação', (WidgetTester tester) async {
+      await tester.pumpWidget(const AnyBank());
+      await tester.pumpAndSettle();
+
+      // Verifica se o botão "Transferir" está presente
+      expect(find.text('Transferir'), findsOneWidget);
+
+      // Verifica se o botão "Cobrar" está presente
+      expect(find.text('Cobrar'), findsOneWidget);
+
+      // Verifica se o botão "Cartões" está presente
+      expect(find.text('Cartões'), findsOneWidget);
+
+      // Verifica se o botão "Recarga" está presente
+      expect(find.text('Recarga'), findsOneWidget);
+    });
+
+    testWidgets('Testa a presença das últimas transações', (WidgetTester tester) async {
+      await tester.pumpWidget(const AnyBank());
+      await tester.pumpAndSettle();
+
+      // Verifica se a transação "Compra no iFood" está presente
+      expect(find.text('Compra no iFood'), findsOneWidget);
+
+      // Verifica se a transação "Compra na Leroy Merlin" está presente
+      expect(find.text('Compra na Leroy Merlin'), findsOneWidget);
+
+      // Verifica se a transação "Transferência recebida" está presente
+      expect(find.text('Transferência recebida'), findsOneWidget);
+    });
+
+    testWidgets('Testa a presença do próximo pagamento e empréstimos', (WidgetTester tester) async {
+      await tester.pumpWidget(const AnyBank());
+      await tester.pumpAndSettle();
+
+      // Verifica se o próximo pagamento está presente
+      expect(find.text('Próximo pagamento'), findsOneWidget);
+      expect(find.text('Quarta-feira, 15 Mai'), findsOneWidget);
+
+      // Verifica se os empréstimos estão presentes
+      expect(find.text('Empréstimos'), findsOneWidget);
+      expect(find.text('Valor disponível'), findsOneWidget);
+      expect(find.text('R\$ 10,000.00'), findsOneWidget);
+    });
+  });
 
   });
 }
