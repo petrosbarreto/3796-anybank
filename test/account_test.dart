@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:anybank/main.dart';
 
 void main() {
-  group("Testes de testes de transferência", () {
+  group("Testes de transferência", () { 
     test("Testa uma transferência", () {
       final Account account = Account(number: 123, cpf: "322.123.123-22", balance: 100.0, name: "Beto");
 
