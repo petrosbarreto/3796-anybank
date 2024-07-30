@@ -7,7 +7,7 @@ void main() {
     test("Testa uma transferência", () {
       final Account account = Account(number: 123, cpf: "322.123.123-22", balance: 100.0, name: "Beto");
 
-      account.transfer(101);
+      account.transfer(100);
       
       expect(account.balance, 0);
     });
